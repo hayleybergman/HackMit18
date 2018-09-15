@@ -1,0 +1,33 @@
+"""
+Restaurant class
+"""
+
+class Restaurant:
+	def __init__(self):
+    	self.name = ""
+    	self.rating = 0
+    	self.category = ""
+    	self.favorite_item = ""
+
+    def get_name(self):
+    	return self.name
+
+    def set_name(self, name):
+    	self.name = name
+
+    def get_rating(self):
+    	return self.rating
+
+    def set_rating(self, rating):
+    	self.rating = rating
+
+    def get_category(self):
+    	return self.category
+
+    def set_category(self, category):
+    	self.category = category
+
+    #updates restaurant information (rating and favorite item)
+    def update(self, rating = self.rating, favorite_item = self.favorite_item):
+    	self.rating = rating
+    	self.favorite_item = favorite_item
