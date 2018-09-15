@@ -1,3 +1,5 @@
+import random
+
 class RestaurantStorage:
 
 	def __init__(self):
@@ -21,4 +23,11 @@ class RestaurantStorage:
 			return
 		else:
 			categoryMap[restaurant.category] = [restaurant]
+
+	def getAnyRestaurant():
+		return random.choice(allRestaurants)
+
+	def getByCategory(category):
+		return categoryMap[category]
+
 
