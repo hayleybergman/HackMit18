@@ -8,7 +8,7 @@ class RestaurantStorage:
 		self.allRestaurants = []
 
 	def addRestaurant(self, restaurant):
-		self.allRestaurants.append(restaurant.name)
+		self.allRestaurants.append(restaurant)
 		self.addHelper(restaurant)
 
 	def addHelper(self, restaurant):
