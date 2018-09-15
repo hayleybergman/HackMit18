@@ -32,5 +32,6 @@ while running:
 
 	elif i == "quit":
 		running = False
+		continue
 
 	i = input("Tell me what to do next: ")
