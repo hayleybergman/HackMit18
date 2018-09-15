@@ -28,6 +28,8 @@ class RestaurantStorage:
 		return random.choice(allRestaurants)
 
 	def getByCategory(category):
+		if category not in categoryMap.keys():
+			return []
 		return categoryMap[category]
 
 
