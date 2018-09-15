@@ -12,7 +12,7 @@ class RestaurantStorage:
 		addHelper(restaurant)
 
 	def addHelper(restaurant):
-		if category in categoryMap.keys()
+		if category in categoryMap.keys():
 			currentInCategory = categoryMap[restaurant.category]
 			for i in range(len(currentInCategory)):
 				if restaurant.rating >= currentInCategory[i].rating:
