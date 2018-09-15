@@ -7,7 +7,12 @@ class Restaurant:
     	self.name = ""
     	self.rating = 0
     	self.category = ""
-    	self.favorite_item = ""
+    	# self.favorite_item = ""
+
+    def __init__(self, name, rating, category):
+    	self.name = name
+    	self.rating = rating
+    	self.category = category
 
     def get_name(self):
     	return self.name
