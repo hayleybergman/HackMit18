@@ -7,30 +7,30 @@ class RestaurantStorage:
 		self.categoryMap = {}
 		self.allRestaurants = []
 
-	def addRestaurant(restaurant):
-		allRestaurants.append(restaurant.name)
-		addHelper(restaurant)
+	def addRestaurant(self, restaurant):
+		self.allRestaurants.append(restaurant.name)
+		self.addHelper(restaurant)
 
-	def addHelper(restaurant):
-		if category in categoryMap.keys():
-			currentInCategory = categoryMap[restaurant.category]
+	def addHelper(self, restaurant):
+		if restaurant.category in self.categoryMap.keys():
+			currentInCategory = self.categoryMap[restaurant.category]
 			for i in range(len(currentInCategory)):
 				if restaurant.rating >= currentInCategory[i].rating:
 					currentInCategory.insert(i,restaurant)
-					categoryMap[restaurant.category] = currentInCategory
+					self.categoryMap[restaurant.category] = currentInCategory
 					return
 			currentInCategory.append(restaurant)
-			categoryMap[restaurant.category] = currentInCategory
+			self.categoryMap[restaurant.category] = currentInCategory
 			return
 		else:
-			categoryMap[restaurant.category] = [restaurant]
+			self.categoryMap[restaurant.category] = [restaurant]
 
-	def getAnyRestaurant():
-		return random.choice(allRestaurants)
+	def getAnyRestaurant(self):
+		return random.choice(self.allRestaurants)
 
-	def getByCategory(category):
-		if category not in categoryMap.keys():
+	def getByCategory(self, category):
+		if category not in self.categoryMap.keys():
 			return []
-		return categoryMap[category]
+		return self.categoryMap[category]
 
 
