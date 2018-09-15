@@ -8,7 +8,7 @@ restaurants.addRestaurant(r1)
 i = input("Welcome to Personal Restaurant Picker, tell me what you would like to do: ")
 
 if i == "where should I eat":
-	print(restaurants.getAnyRestaurant())
+	print(restaurants.getAnyRestaurant().to_string())
 
 elif i == "add a restaurant":
 	name = input("What is the restaurant's name? ")
@@ -25,4 +25,4 @@ elif i == "get restaurant in category":
 		print("You don't have any restaurants in that category...you should get out more")
 	else:
 		for res in r:
-			print(res.name + ": \t" + res.rating)
+			print(res.to_string())

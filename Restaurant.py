@@ -33,7 +33,7 @@ class Restaurant:
 		self.category = category
 
 	def to_string(self):
-		return self.name + ": \t" + self.rating
+		return self.name + ": \t" + str(self.rating)
 
     #updates restaurant information (rating and favorite item)
 	def update(self, rating, favorite_item):
