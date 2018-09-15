@@ -1,3 +1,6 @@
+from RestaurantStorage import RestaurantStorage
+from Restaurant import Restaurant
+
 restaurants = RestaurantStorage()
 
 i = raw_input("Welcome to Personal Restaurant Picker, tell me what you would like to do")

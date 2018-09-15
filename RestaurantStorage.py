@@ -17,8 +17,8 @@ class RestaurantStorage:
 			for i in range(len(currentInCategory)):
 				if restaurant.rating >= currentInCategory[i].rating:
 					currentInCategory.insert(i,restaurant)
-						categoryMap[restaurant.category] = currentInCategory
-							return
+					categoryMap[restaurant.category] = currentInCategory
+					return
 			currentInCategory.append(restaurant)
 			categoryMap[restaurant.category] = currentInCategory
 			return
