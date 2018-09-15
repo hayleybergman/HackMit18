@@ -1,4 +1,5 @@
 import random
+import Restaurant
 
 class RestaurantStorage:
 
